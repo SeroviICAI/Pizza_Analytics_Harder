@@ -2,7 +2,7 @@
 
 ## What's the objective?
 The objective of this mini project is to predict how many ingredients and of what kind would be needed in the
-near future, whilst having to work with some super desorganized .csv files.
+near future, whilst having to work with some super disorganized .csv files.
 
 ## What data structure do we want?
 Probably some sort of dataframe is the best way to go. They are easy to manipulate and to work with. Panels
@@ -10,7 +10,7 @@ Probably some sort of dataframe is the best way to go. They are easy to manipula
 of complexity required for such problem.
 
 ## Where can we start?
-First and foremost, the dataframes are really desorganised, so a good first step would be filling the missing
+First and foremost, the dataframes are really disorganised, so a good first step would be filling the missing
 values (ffill and bfill maybe) and obatining dataframes coherent with the data dictionary and pizza types csv.
 
 Furthermore, there are too many data files to work with that working with them can get quite messy, plus
