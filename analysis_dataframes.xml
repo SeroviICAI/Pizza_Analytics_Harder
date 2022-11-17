@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<root>
+   <!--Brief analysis of nan's, nulls, data types and data counts of each dataframe-->
+   <file name="name">
+      orders
+      <length name="count">21350</length>
+      <column column_name="order_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">int64</data_type>
+         <unique name="count">21350</unique>
+      </column>
+      <column column_name="date">
+         <nan name="nan_count">2353</nan>
+         <null name="null_count">2353</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">5065</unique>
+      </column>
+      <column column_name="time">
+         <nan name="nan_count">2038</nan>
+         <null name="null_count">2038</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">10689</unique>
+      </column>
+   </file>
+   <file name="name">
+      order_details
+      <length name="count">48620</length>
+      <column column_name="order_details_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">int64</data_type>
+         <unique name="count">48620</unique>
+      </column>
+      <column column_name="order_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">int64</data_type>
+         <unique name="count">21350</unique>
+      </column>
+      <column column_name="pizza_id">
+         <nan name="nan_count">5673</nan>
+         <null name="null_count">5673</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">708</unique>
+      </column>
+      <column column_name="quantity">
+         <nan name="nan_count">4726</nan>
+         <null name="null_count">4726</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">9</unique>
+      </column>
+   </file>
+   <file name="name">
+      pizzas
+      <length name="count">96</length>
+      <column column_name="pizza_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">96</unique>
+      </column>
+      <column column_name="pizza_type_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">32</unique>
+      </column>
+      <column column_name="size">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">5</unique>
+      </column>
+      <column column_name="price">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">float64</data_type>
+         <unique name="count">27</unique>
+      </column>
+   </file>
+   <file name="name">
+      pizza_types
+      <length name="count">32</length>
+      <column column_name="pizza_type_id">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">32</unique>
+      </column>
+      <column column_name="name">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">32</unique>
+      </column>
+      <column column_name="category">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">4</unique>
+      </column>
+      <column column_name="ingredients">
+         <nan name="nan_count">0</nan>
+         <null name="null_count">0</null>
+         <data_type name="data_type">object</data_type>
+         <unique name="count">32</unique>
+      </column>
+   </file>
+</root>
