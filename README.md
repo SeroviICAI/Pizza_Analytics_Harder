@@ -49,4 +49,14 @@ how the amounts of ingredients used change each week is the way to go, in order 
 these ingredients follow.
 
 ## Predict near future:
-The median of the amount of ingredients is accurate enough, as the data have a high variance, and the median is less altered by outlayers than the mean. Implementing a more complex model, such as a Sequence, or Linear Regression, is not really needed for so small amounts of data (53 weeks).
+The median of the amount of ingredients is accurate enough, as the data have a high variance, and the median is
+less altered by outlayers than the mean. Implementing a more complex model, such as a Sequence, or Linear Regression,
+is not really needed for so small amounts of data (53 weeks).
+
+## Notes:
+If you run main.py the whole program will be executed. The reports, xml files, csv's, images,... will be created on
+the desired directories. As comment, main.py contains data animations made with plotly. For a quicker runtime, this
+visualizations won't be executed unless you remove the hashtag from the comment.
+
+The project contains several directories: data - contains the raw data, processed_data - contains processed_data and
+images - contains the plots appended in the pdf report.
