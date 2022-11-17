@@ -28,6 +28,9 @@ order, there would be "n" ocurrences of that specific pizza) and the price of th
 all the ordered pizzas).
 
 ## What more can be useful for our analysis?
+Before organising our datasets, we can make a description of the number of null's, etc... of each dataframe so
+we have a better idea of how to clean the raw data.
+
 Having more than one dataframe to work with is no issue. In fact, it helps structuring your data into separate
 variables. As we are working with ingredient amounts, it is important how many ingredients were consumed across
 the year and their kind (Tomato sauce, Mozzarella cheese, ...). Additionaly, we can create another dataframe
@@ -47,6 +50,8 @@ For the total amount of ingredients consumed across the year, a barplot would be
 ingredients are more relevant/used in the business. When analysing this per week, maybe an animation that shows
 how the amounts of ingredients used change each week is the way to go, in order to tell the uses and tendencies
 these ingredients follow.
+
+Eventually, generating some reports on pdf and excel would be a great idea as well.
 
 ## Predict near future:
 The median of the amount of ingredients is accurate enough, as the data have a high variance, and the median is
