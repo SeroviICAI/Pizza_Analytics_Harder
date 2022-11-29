@@ -8,3 +8,4 @@ numpy~=1.22.1
 requests~=2.27.1
 openpyxl~=3.0.10
 XlsxWriter~=3.0.3
+dataframe_image
