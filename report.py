@@ -240,6 +240,3 @@ def create_visualizations():
     prediction_df = ingredients_weeks[ingredients_weeks.columns].median().to_frame(name="Amount")
     dfi.export(prediction_df[:len(prediction_df) // 2], 'images/predictions_1.png')
     dfi.export(prediction_df[len(prediction_df) // 2:], 'images/predictions_2.png')
-
-
-create_report()
