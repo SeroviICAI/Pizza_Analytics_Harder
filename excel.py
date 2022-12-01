@@ -3,10 +3,12 @@ import pandas as pd
 
 
 def create_excel():
-    clean_dataframe, ingredients_weeks, pizzas_weeks_sizes, pizzas_weeks = [pd.read_csv("processed_data/" + csv_name,
-                                                                                        encoding='latin')
-                                                                            for csv_name in os.listdir("processed_data/"
-                                                                                                       )]
+    # Cannot be read via loop because of how dockerfile saves these files
+    clean_dataframe = pd.read_csv("processed_data/clean_dataframe.csv", encoding='latin')
+    ingredients_weeks = pd.read_csv("processed_data/ingredients_weeks.csv", encoding='latin')
+    pizzas_weeks_sizes = pd.read_csv("processed_data/pizzas_weeks(with sizes).csv", encoding='latin')
+    pizzas_weeks = pd.read_csv("processed_data/pizzas_weeks(with types_only).csv", encoding='latin')
+    
     clean_dataframe.set_index('order_id', inplace=True)
     ingredients_weeks.set_index('week', inplace=True)
     pizzas_weeks_sizes.set_index('week', inplace=True)
