@@ -203,6 +203,22 @@ def visualize_ingredients_consumed(series: pd.Series, dataframe_pizzas: pd.DataF
 
 def predict_next_week(dataframe: pd.DataFrame) -> None:
     display(predictions := dataframe[dataframe.columns].median().to_frame(name="Amount"))
+    # XML of ingredient amounts predictions
+    root = Element('root')
+    comment = Comment("Vague prediction of next week ingredients amount.")
+    root.append(comment)
+
+    dataframe = SubElement(root, 'file', name='name')
+    dataframe.text = "prediction_ingredients"
+    for ingredient in predictions.index:
+        column = SubElement(dataframe, 'ingredient', {'ingredient_name': 'Nduja Salami' if (ingredient ==
+                                                                                            'Nduja Salami')
+                                                      else ingredient})
+        SubElement(column, 'amount', name='nan_count').text = str(predictions.loc[ingredient, 'Amount'])
+
+    xml_string = parseString(tostring(root)).toprettyxml(indent="   ")
+    with open("predictions.xml", "w") as file:
+        file.write(xml_string)
     return predictions.to_csv('predictions.csv', sep=',')
 
 
