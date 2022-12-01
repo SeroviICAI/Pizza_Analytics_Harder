@@ -65,3 +65,6 @@ visualizations won't be executed unless you remove the hashtag from the comment.
 
 The project contains several directories: data - contains the raw data, processed_data - contains processed_data and
 images - contains the plots appended in the pdf report.
+
+## DOCKERFILE:
+If the dockerfile doesn't execute "main.py" directly, please go to terminal on the same dockerfile and write "python main.py". The workdirectories are correctly specified.
