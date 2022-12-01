@@ -9,6 +9,7 @@ import pandas as pd
 import warnings
 import requests
 import seaborn as sns
+
 from fpdf import FPDF
 
 TITLE = "Maven Pizza Data Report"
@@ -124,7 +125,7 @@ def create_visualizations():
     ingredients_weeks = pd.read_csv("processed_data/ingredients_weeks.csv", encoding='latin')
     pizzas_weeks_sizes = pd.read_csv("processed_data/pizzas_weeks(with sizes).csv", encoding='latin')
     pizzas_weeks = pd.read_csv("processed_data/pizzas_weeks(with types_only).csv", encoding='latin')
-    
+
     pizza_types = pd.read_csv("data/pizza_types.csv", encoding='latin')
     ingredients_weeks.set_index('week', inplace=True)
     pizzas_weeks_sizes.set_index('week', inplace=True)
@@ -148,7 +149,7 @@ def create_visualizations():
         .set_properties(**{'border': '1.3px black'}) \
         .bar(subset=["Price", ], color='lightgreen') \
         .applymap(higher_than_mean, subset=['Amount_ordered'])
-    dfi.export(styled_df, 'images/table_orders.png')
+    dfi.export(styled_df, 'images/table_orders.png', table_conversion='matplotlib')
 
     # Setting seaborn style
     sns.set_style('darkgrid')
@@ -239,5 +240,5 @@ def create_visualizations():
     # fig.show()
 
     prediction_df = ingredients_weeks[ingredients_weeks.columns].median().to_frame(name="Amount")
-    dfi.export(prediction_df[:len(prediction_df) // 2], 'images/predictions_1.png')
-    dfi.export(prediction_df[len(prediction_df) // 2:], 'images/predictions_2.png')
+    dfi.export(prediction_df[:len(prediction_df) // 2], 'images/predictions_1.png', table_conversion='matplotlib')
+    dfi.export(prediction_df[len(prediction_df) // 2:], 'images/predictions_2.png', table_conversion='matplotlib')
