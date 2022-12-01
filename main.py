@@ -29,7 +29,7 @@ class DescribedDataFrame(pd.DataFrame):
 
 
 def extract() -> Tuple[pd.Series, List[DescribedDataFrame]]:
-    dataframe_container = []
+    dataframe_container = {}
     temp = pd.read_csv('data/data_dictionary.csv', encoding='latin')
     description = pd.Series(data=list(temp['Description']), index=temp['Field'])
 
@@ -40,12 +40,15 @@ def extract() -> Tuple[pd.Series, List[DescribedDataFrame]]:
             else:
                 dataframe = DescribedDataFrame(pd.read_csv('data/' + csv_name, delimiter=',', encoding='latin'))
             dataframe.name = csv_name.split('.csv')[0]
-            dataframe_container.append(dataframe)
+            dataframe_container[csv_name] = dataframe
     return description, dataframe_container
 
 
 def clean_dataframes(dataframe_container: List[DescribedDataFrame]) -> List[DescribedDataFrame]:
-    orders, order_details, pizzas, pizza_types = dataframe_container
+    orders, order_details, pizzas, pizza_types = dataframe_container["orders.csv"],\
+                                                 dataframe_container["order_details.csv"],\
+                                                 dataframe_container["pizzas.csv"],\
+                                                 dataframe_container["pizza_types.csv"]
 
     # Sorting dataframes for filling nan's afterwards...
     orders.sort_values(by='order_id', ascending=True, ignore_index=True, inplace=True)
