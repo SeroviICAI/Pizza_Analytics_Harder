@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+<root>
+   <!--Vague prediction of next week ingredients amount.-->
+   <file name="name">
+      prediction_ingredients
+      <ingredient ingredient_name="Alfredo Sauce">
+         <amount name="nan_count">18.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Anchovies">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Artichoke">
+         <amount name="nan_count">45.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Artichokes">
+         <amount name="nan_count">109.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Arugula">
+         <amount name="nan_count">29.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Asiago Cheese">
+         <amount name="nan_count">63.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Bacon">
+         <amount name="nan_count">82.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Barbecue Sauce">
+         <amount name="nan_count">47.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Barbecued Chicken">
+         <amount name="nan_count">47.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Beef Chuck Roast">
+         <amount name="nan_count">26.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Blue Cheese">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Brie Carre Cheese">
+         <amount name="nan_count">9.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Calabrese Salami">
+         <amount name="nan_count">35.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Capocollo">
+         <amount name="nan_count">129.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Caramelized Onions">
+         <amount name="nan_count">9.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Chicken">
+         <amount name="nan_count">166.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Chipotle Sauce">
+         <amount name="nan_count">62.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Chorizo Sausage">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Cilantro">
+         <amount name="nan_count">62.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Coarse Sicilian Salami">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Corn">
+         <amount name="nan_count">62.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Eggplant">
+         <amount name="nan_count">20.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Feta Cheese">
+         <amount name="nan_count">93.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Fontina Cheese">
+         <amount name="nan_count">63.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Friggitello Peppers">
+         <amount name="nan_count">17.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Garlic">
+         <amount name="nan_count">546.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Genoa Salami">
+         <amount name="nan_count">28.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Goat Cheese">
+         <amount name="nan_count">63.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Gorgonzola Piccante Cheese">
+         <amount name="nan_count">37.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Gouda Cheese">
+         <amount name="nan_count">45.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Green Olives">
+         <amount name="nan_count">118.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Green Peppers">
+         <amount name="nan_count">103.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Italian Sausage">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Jalapeno Peppers">
+         <amount name="nan_count">112.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Kalamata Olives">
+         <amount name="nan_count">63.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Luganega Sausage">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Mozzarella Cheese">
+         <amount name="nan_count">964.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Mushrooms">
+         <amount name="nan_count">190.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Onions">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Oregano">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Pancetta">
+         <amount name="nan_count">17.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Parmigiano Reggiano Cheese">
+         <amount name="nan_count">37.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Pears">
+         <amount name="nan_count">9.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Peperoncini verdi">
+         <amount name="nan_count">37.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Pepperoni">
+         <amount name="nan_count">205.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Pesto Sauce">
+         <amount name="nan_count">57.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Pineapple">
+         <amount name="nan_count">89.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Plum Tomatoes">
+         <amount name="nan_count">18.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Prosciutto">
+         <amount name="nan_count">9.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Prosciutto di San Daniele">
+         <amount name="nan_count">29.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Provolone Cheese">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Red Onions">
+         <amount name="nan_count">382.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Red Peppers">
+         <amount name="nan_count">311.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Ricotta Cheese">
+         <amount name="nan_count">37.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Romano Cheese">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Sliced Ham">
+         <amount name="nan_count">47.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Smoked Gouda Cheese">
+         <amount name="nan_count">27.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Soppressata Salami">
+         <amount name="nan_count">18.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Spinach">
+         <amount name="nan_count">197.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Sun-dried Tomatoes">
+         <amount name="nan_count">36.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Thai Sweet Chilli Sauce">
+         <amount name="nan_count">44.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Thyme">
+         <amount name="nan_count">9.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Tomato Sauce">
+         <amount name="nan_count">728.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Tomatoes">
+         <amount name="nan_count">525.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Zucchini">
+         <amount name="nan_count">47.0</amount>
+      </ingredient>
+      <ingredient ingredient_name="Nduja Salami">
+         <amount name="nan_count">17.0</amount>
+      </ingredient>
+   </file>
+</root>
