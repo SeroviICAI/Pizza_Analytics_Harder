@@ -120,10 +120,11 @@ def write_to_pdf(pdf, words):
 
 
 def create_visualizations():
-    clean_dataframe, ingredients_weeks, pizzas_weeks_sizes, pizzas_weeks = [pd.read_csv("processed_data/" + csv_name,
-                                                                                        encoding='latin')
-                                                                            for csv_name in os.listdir("processed_data/"
-                                                                                                       )]
+    clean_dataframe = pd.read_csv("processed_data/clean_dataframe.csv", encoding='latin')
+    ingredients_weeks = pd.read_csv("processed_data/ingredients_weeks.csv", encoding='latin')
+    pizzas_weeks_sizes = pd.read_csv("processed_data/pizzas_weeks(with sizes).csv", encoding='latin')
+    pizzas_weeks = pd.read_csv("processed_data/pizzas_weeks(with types_only).csv", encoding='latin')
+    
     pizza_types = pd.read_csv("data/pizza_types.csv", encoding='latin')
     ingredients_weeks.set_index('week', inplace=True)
     pizzas_weeks_sizes.set_index('week', inplace=True)
