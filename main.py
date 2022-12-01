@@ -232,7 +232,7 @@ def main():
     root = Element('root')
     comment = Comment("Brief analysis of nan's, nulls, data types and data counts of each dataframe")
     root.append(comment)
-    for dataframe_pd in dataframe_container:
+    for dataframe_pd in dataframe_container.values():
         # dataframe_pd.info()
         dataframe = SubElement(root, 'file', name='name')
         dataframe.text = dataframe_pd.name
