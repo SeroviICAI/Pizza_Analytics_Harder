@@ -214,7 +214,7 @@ def predict_next_week(dataframe: pd.DataFrame) -> None:
         column = SubElement(dataframe, 'ingredient', {'ingredient_name': 'Nduja Salami' if (ingredient ==
                                                                                             'Nduja Salami')
                                                       else ingredient})
-        SubElement(column, 'amount', name='nan_count').text = str(predictions.loc[ingredient, 'Amount'])
+        SubElement(column, 'amount', name='amount').text = str(predictions.loc[ingredient, 'Amount'])
 
     xml_string = parseString(tostring(root)).toprettyxml(indent="   ")
     with open("predictions.xml", "w") as file:
